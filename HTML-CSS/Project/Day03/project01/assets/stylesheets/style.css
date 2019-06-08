@@ -1,0 +1,66 @@
+.box {
+	background-color: aqua;
+	height: 270px;
+	width: 275px;
+	box-sizing: border-box;	
+	border: 20px solid lightblue;
+	outline: 20px solid black;
+	margin: 50px;
+	box-shadow: 0 0 0 40px pink;
+}
+
+.attr ul{
+	list-style: none;
+}
+
+.attr li {
+	display: inline-block;
+	margin-right: 50px;
+}
+
+.circle {
+	display: inline-block;
+	border-radius: 50%;
+	height: 10px;
+	width: 10px;
+	margin-right: 5px;
+}
+
+.circle-1 {
+	background-color: aqua;
+}
+
+.circle-2 {
+	background-color: lightblue;
+}
+
+.circle-3 {
+	background-color: black;
+}
+
+.circle-4 {
+	background-color: pink;
+}
+
+.row {
+	display: inline-block;
+	border: 1px solid gray;
+	width: 600px;
+}
+
+.col {
+	display: inline-block;
+	height: 100px;
+	width: 180px;
+	background-color: gray;
+	margin: 10px;
+}
+
+.row-2 .col {
+	border: 1px solid black;
+}
+
+.row-3 .col {
+	border: 1px solid black;
+	box-sizing: border-box;
+}

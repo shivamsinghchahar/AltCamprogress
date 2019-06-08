@@ -1,0 +1,33 @@
+.box {
+	background-color: red;
+	height: 100px;
+	width: 100px;
+	margin: 20px;
+	display: inline-block;
+}
+
+.row-1 {
+	border: 5px solid black;
+}
+
+.row-2 {	
+	border: 5px double black;
+}
+
+.row-2:nth-child(even) {
+	border: 5px dashed black;
+}
+
+.row-3:nth-child(odd) {
+	border: 5px dotted black;
+}
+
+.row-4 {
+	height: 250px;
+	width: 250px;
+	border-top: 10px solid blue;
+	border-right: 10px solid gray;
+	border-bottom: 10px solid yellow;
+	border-left: 10px solid green;
+	outline: 20px solid purple;
+}

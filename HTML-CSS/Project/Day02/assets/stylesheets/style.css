@@ -1,0 +1,105 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Costom styles begin here*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+	line-height: 1.5;
+	font-family: 'Roboto', sans-serif;
+}
+
+header {
+	text-align: center;
+	letter-spacing: 1px;
+	background-color: #CF46A7;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+.navbar-header .nav-item {
+	color: white;
+	text-decoration: none;
+	font-weight: bolder;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.heading {
+	text-align: center;
+	font-weight: bolder;
+	font-size: 30px;
+	padding-bottom: 2%;
+}
+
+article {
+	text-align: justify;
+	padding-top: 2%;
+	padding-bottom: 5%;
+}
+
+section:nth-child(odd) {
+	background-color: lightgray;
+}
+
+footer {
+	background-color: lightgreen;
+	text-align: center;
+	letter-spacing: 1px;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+.navbar-footer .nav-item {
+	padding-left: 10px;
+	padding-right: 10px;
+}

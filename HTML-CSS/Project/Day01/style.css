@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	display: inline;
+}
+
+header {
+	margin-bottom: 20px;
+}
+
+#logo {
+	margin-right: 20%;
+}
+
+#about {
+	margin-right: 20%;
+}
+
+#services {
+	margin-right: 20%;
+}
+
+#contact {
+	margin-right: 20%;
+}
+
+.team {
+	display: inline;
+	/*margin-left: 25%;*/
+}
+
+.image {
+	display: inline;
+	margin-left: 20%;
+}
+
+.about-team {
+	display: inline;
+}
+
+.image img {
+	height: 5%;
+	width: 5%;
+}
+
+.image-wrapper {
+	margin-top: 20px;
+}

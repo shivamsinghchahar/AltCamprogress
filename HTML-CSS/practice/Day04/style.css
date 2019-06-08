@@ -1,0 +1,32 @@
+.container {
+	background-color: green;
+}
+
+.clearfix:before, 
+.clearfix:after {
+	content: "";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.box {
+	background-color: blue;
+	height: 200px;
+	width: 200px;
+	/*margin: 10px 10px;*/
+	float: left;
+}
+
+.box-2 {
+	background-color: red;
+	float: right;
+}
+
+.box-3 {
+	background-color: orange;
+	height: 200px;
+	/*clear: both;*/
+}

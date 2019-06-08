@@ -1,0 +1,46 @@
+/*Takes the available width*/
+div {
+	/*there is always a gap b/w inline block elements without any margin which can't
+	  be removed with CSS
+	*/
+	display: inline-block;
+	/*sometimes inline-block elemets can get misaligned due to content, use vertical-align
+      property to deal with that
+	*/
+	vertical-align: middle;
+	/*x, y, blur-radius, spread(optional), color. Use - to change shadow direction.
+	we can also apply multiple box shadows. Use inset to apply shadow inside the box
+	*/
+	box-shadow: inset 4px 4px 10px 2px #000, inset -4px -4px 10px red, 0 0 0 4px black; 
+	background-color: lightgray;
+	height: 200px;
+	width: 200px;
+	padding: 20px;
+	border: 10px solid blue;
+	/*margin: 20px;*/
+	/*In 'border box' everything is applied within given height and width
+		and in content box eveyhing is added to the given height and width
+	*/
+	box-sizing: border-box;
+	/*top, right, bottom, left. goes clockwise*/
+	/*padding: 20px 30px 40px 60px;*/
+	
+	/*top-bottom, left-right*/
+	/*padding: 30px 60px;*/
+	/*border: 5px groove black;*/
+	/*padding: 20px;*/
+	/*margin works normally*/
+	/*margin: 20px;*/
+}
+/*Takes the width according to the content*/
+/*Padding overlaps with other content*/
+/*span {*/
+	/*display: inline-block;*/
+	/*background-color: lightblue;*/
+	/*height: 200px;*/
+	/*width: 200px;*/
+	/*padding: 20px;*/
+	/*border: 5px solid black;*/
+	/*margin works only on left and right in inline elements*/
+	/*margin: 20px;*/
+/*}*/

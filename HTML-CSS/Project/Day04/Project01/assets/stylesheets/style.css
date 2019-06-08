@@ -1,0 +1,73 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+.container {
+	margin: 5% 5%;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: table;
+}
+
+.clearfix:before {
+	clear: both;
+}
+
+.clearfix:after {
+	clear: both;
+	*zoom: 1;
+}
+
+img {
+	margin: 0 5px 0 0; 
+}
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
+.none {
+	height: 5%;
+	background-color: pink;
+	border: 10px solid orange;
+	box-shadow: 0 0 0 5px red;
+}
+
+.bg-container {
+	background-color: pink;
+	border: 10px solid orange;
+	box-shadow: 0 0 0 5px red;
+}
+
+.bg-box {
+	background-color: darkseagreen;
+	height: 100px;
+	width: 100%;
+	margin-bottom: 10px;
+	float: left;
+}
+
+.sm-box {
+	background-color: darkseagreen;
+	height: 100px;
+	width: 100px;
+	margin: 0 10px 10px 0;
+	float: left; 
+}
+
+.clear {
+	clear: both;
+}
+
+.content {
+	margin: 10px 0;
+}
