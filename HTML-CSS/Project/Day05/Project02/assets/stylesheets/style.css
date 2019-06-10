@@ -1,0 +1,105 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+	Custom CSS
+*/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	color: white;
+	background: url(https://i.ytimg.com/vi/BfCwN4iy6T8/maxresdefault.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+h1 {
+	font-size: 30px;
+	font-weight: 600;
+}
+
+.header {
+	min-height: 30px;
+	text-align: center;
+	padding: 10px 0;
+}
+
+.row {
+	text-align: center;
+	min-height: 300px;
+	max-height: 600px;
+	padding: 10% 5%;
+}
+
+.box {
+	display: inline-block;
+	text-align: center;
+	margin: 10px 20px;
+	height: 200px;
+	width: 200px;
+	background: red;
+}
+
+.box-2 {
+	background: linear-gradient(to right,orange 40%, red);
+}
+
+.box-3 {
+	background: radial-gradient(orange 20%, red);
+}
+
+.big-box {
+	min-width: 800px;
+	min-height: 300px;
+	border-radius: 10px;
+	background: linear-gradient(to right,rgba(255, 0, 0, 0.2) 40%, rgba(255,0,0,0.7)), url(https://iso.500px.com/wp-content/uploads/2014/07/big-one.jpg);
+}
