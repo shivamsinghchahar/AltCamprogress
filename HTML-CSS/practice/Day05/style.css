@@ -1,0 +1,31 @@
+/*relative takes reference from its original position.
+  No one can take its original position  
+*/
+/*absolute takes reference from window or the container which is having its position realtive.
+  Original position is lost.
+*/
+/*
+	fixed always takes reference from the window
+*/
+.parent {
+	height: 500px;
+	width: 500px;
+	position: relative;
+	background-color: lightblue;
+}
+
+.box-1 {
+	height: 200px;
+	width: 200px;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	background-color: pink;
+}
+
+.box-2 {
+	height: 200px;
+	width: 200px;
+	background-color: yellow;
+	/*position: relative;*/
+}
