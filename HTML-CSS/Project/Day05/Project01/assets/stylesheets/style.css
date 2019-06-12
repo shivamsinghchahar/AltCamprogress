@@ -69,7 +69,7 @@ body {
 	width: 100%;
   	background: #e44d26; /* fallback for old browsers */
   	background: -webkit-linear-gradient(to right, #e44d26, #f16529); /* Chrome 10-25, Safari 5.1-6 */
-  	background: linear-gradient(to right, #e44d26, #f16529);
+  	background: linear-gradient(to left, #fdc830, #f37335);
 	min-height: 70px;
 	padding: 30px 12%;
 	word-spacing: 20px; 
