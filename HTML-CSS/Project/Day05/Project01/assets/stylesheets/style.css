@@ -1,0 +1,159 @@
+/*
+	CSS Reset
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+	Custom CSS
+*/
+
+* {
+	box-sizing: border-box;
+}
+
+/*
+	Header
+*/
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background: #FFF9C4; /* fallback for old browsers */
+  	/*background: -webkit-linear-gradient(to right, #f3904f, #3b4371);  Chrome 10-25, Safari 5.1-6 
+  	background: linear-gradient(to right, #f3904f, #3b4371); */
+}
+
+.header {
+  	background: #e44d26; /* fallback for old browsers */
+  	background: -webkit-linear-gradient(to right, #e44d26, #f16529); /* Chrome 10-25, Safari 5.1-6 */
+  	background: linear-gradient(to right, #e44d26, #f16529);
+	min-height: 70px;
+	padding: 30px 12%;
+	word-spacing: 20px; 
+}
+
+.navbar a{
+	text-decoration: none;
+	font-size: 24px;
+	color: white;
+	font-weight: bold;
+}
+
+/*
+	Content
+*/
+
+.box-container {
+	min-height: 700px;
+	text-align: center;
+	margin-top: 10px;
+	padding: 20px 0;
+}
+
+.box {
+	display: inline-block;
+	vertical-align: middle;
+
+	box-shadow: 10px 10px 10px  rgba(0,0,0,.5);
+
+ 	background: #2979FF; /* fallback for old browsers */
+
+	height: 500px;
+	width: 300px;
+	margin: 0 30px;
+	list-style-position: inside;
+	text-align: left;
+	color: #FFF9C4;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 1.5;
+	letter-spacing: 2px;
+	padding: 30px 30px;
+}
+
+
+.box li {
+	margin: 5px 0;
+}
+
+.box-2 ul ol {
+	text-indent: 40px;
+}
+
+.box-2 ul ol ul{
+	text-indent: 80px;
+}
+
+.box-3 ul {
+	list-style-image: url(../media/checked.png);
+}
+
+
+.description {
+	margin: 0 10%;
+	color: #263238;
+}
+
+.description dt {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 32px;
+	font-weight: bold;
+}
+
+.description dd {
+	padding: 5% 5%;
+	font-size: 20px;
+	line-height: 1.5;
+	text-align: left;
+}
+
+/*
+	Footer
+*/
+
+.footer {
+	background: #263238;
+	min-height: 130px;
+	padding: 30px 20%;
+	word-spacing: 20px;
+}
