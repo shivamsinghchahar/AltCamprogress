@@ -64,6 +64,9 @@ body {
 }
 
 .header {
+	position: fixed;
+	top: 0;
+	width: 100%;
   	background: #e44d26; /* fallback for old browsers */
   	background: -webkit-linear-gradient(to right, #e44d26, #f16529); /* Chrome 10-25, Safari 5.1-6 */
   	background: linear-gradient(to right, #e44d26, #f16529);
@@ -83,10 +86,13 @@ body {
 	Content
 */
 
+.content-container {
+	margin-top: 90px;
+}
+
 .box-container {
 	min-height: 700px;
 	text-align: center;
-	margin-top: 10px;
 	padding: 20px 0;
 }
 
