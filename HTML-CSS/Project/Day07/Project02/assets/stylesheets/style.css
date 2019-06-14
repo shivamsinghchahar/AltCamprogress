@@ -42,6 +42,19 @@ table {
 	border-spacing: 0;
 }
 
+/* My Reset */
+button,
+input,
+textarea {
+  box-shadow: none;
+  outline: 0;
+  border: 0;
+}
+img {
+  font-size: 0;
+  vertical-align: top;
+}
+
 /*
 	Custom CSS
 */
@@ -50,20 +63,21 @@ table {
 	box-sizing: border-box;
 }
 
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
 body {
-	font-family: 'Roboto', sans-serif;
-	line-height: 1.5;
-	color: rgba(0,0,0, 0.5);
-	/*background: lightgray;*/
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
 }
 
 main {
 	background: rgba(238,238,238 ,1);
-}
-
-a {
-	text-decoration: none;
-	color: #000;
 }
 
 h2 {
@@ -84,8 +98,18 @@ section ul li {
 	padding: 10px 0;
 }
 
+/* Responsive Image */
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+.padding {
+	padding: 5rem 0;
+}
+
 .wrapper {
-	max-width: 1200px;
+	max-width: 1300px;
 	width: 100%;
 	margin: 0 auto;
 	padding: 30px;
@@ -97,13 +121,15 @@ section ul li {
 .header {
 	position: absolute;
 	width: 100%;
+	top: 0;
+	padding: 0 0.6rem;
 }
 
-.navbar {
+.flex {
 	display: flex;
 	justify-content: space-between;
-	margin-top: 20px;
-	padding: 20px 0;
+	align-items: center;
+	flex-wrap: wrap;
 }
 
 .logo {
@@ -133,180 +159,177 @@ section ul li {
 /*Hero*/
 
 .hero {
-	padding-top: 150px;
-	padding-bottom: 50px;
+	padding:15rem 0 5rem 0;
 }
 
-.flex {
-	display: flex;
-	justify-content: space-between;
-
+.col {
+	width: 50%;
 }
 
-.hero div:nth-child(1) {
-	font-size: 40px;
+.hero-heading {
+	font-size: 3rem;
+	color: #ffffff;
+	line-height: 1.5;
 	font-weight: bold;
-	color: white;
 }
 
-.hero div:nth-child(2) {
-	font-size: 24px;
-	font-weight: bold;
+.col-1 {
+	padding-right: 3rem;
+}
+
+.col-2 {
+	padding-left: 2.5rem;
+	border-left: 2px solid rgba(255,255,255,0.2);
+}
+
+.uppercase {
+	text-transform: uppercase;
 }
 
 .hero-description {
-	padding-bottom: 5px;
-	border-left: 2px solid rgba(255,255,255,0.2);
-	color: rgba(255,255,255, 0.5);
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-.hero-description p {
-	font-size: 20px;
-	margin-bottom: 30px;
-}
-
-/*Section*/
-
-.section-2 {
-	padding-top: 50px;
-}
-
-.flex-column {
-	display: flex;
-	flex-direction: column;
-	align-items: space-between;
-	justify-content: center;
-}
-
-.left-content {
-	padding-top: 0;
-	padding-bottom: 0;
-}
-
-.left-content h2 {
-	font-size: 32px;
+	font-size: 1.5rem;
 	font-weight: bold;
+	color: rgba(255,255,255, 0.5);
 }
 
-.left-content p {
-	margin: 30px 0;
+/*Magna Section*/
+
+.magna-heading {
+	font-size: 2.3rem;
+	color: #555;
+	margin-bottom: 2rem;
 }
 
-.section-right {
-	border-left: 2px solid rgba(0,0,0,0.3);
-	padding-top: 0;
-	padding-bottom: 0;
+.magna-description {
+	font-size: 1.2rem;
+	line-height: 2;
+	font-weight: 400;
+	color: #777;
 }
 
-.section-right li:nth-child(even) {
-	margin: 10px 0;
+.magna-list {
+	padding-left: 2rem;
+}
+
+.magna-item {
+	line-height: 3;
+	font-size: 1.2rem;
+	color: #777;
+	list-style-image: url("../images/right.png");
+	padding-left: 0.5rem;
 }
 
 /*Photo sections*/
 
-.img-section {
-	margin: 30px 0;
-	border-bottom: 2px solid rgba(0,0,0,0.3);
+.article {
+	background: #f5f5f5;
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-.photo-description {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
+.article-container {
+	background: #fff;
+	border-bottom: 2px solid rgba(0,0,0,0.2);
+	margin-bottom: 3.3;
 }
 
-.img-more {
-	background: rgba(238,238,238 ,1);
+.article-img {
+	width: 40%;
 }
 
-.more-img {
-	display: flex;
-	justify-content: center;
+.article-description {
+	width: 60%;
+	padding: 0 3rem;
 }
 
-.more-img .btn {
-	background: rgba(238,238,238 ,1);
-	color: rgba(0,0,0, 0.5);
+.article-heading {
+	font-size: 1.8rem;
+	color: #555;
+	margin-bottom: 2rem;
 }
 
+.article-text {
+	font-size: 1.1rem;
+	color: #888;
+	line-height: 2.3;
+}
+
+.text-center {
+	text-align: center;
+}
 
 /*
-	Footer
+	Contact
 */
+.contact-heading {
+	font-size: 2rem;
+	font-weight: 700;
+	color: #555;
+	margin-bottom: 2rem;
+}
+
+.contact .flex {
+	align-items: flex-start;
+}
+
+.contact .col-2 {
+	border-left: 0;
+}
+
+.contact .col-1 {
+	border-right: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+.contact-text {
+	color: #555;
+	line-height: 2.3;
+	font-size: 1.2rem;
+	margin-bottom: 2rem;
+}
+
+.form-control {
+	display: block;
+	width: 100%;
+	padding: 0.8rem 1rem;
+	margin-bottom: 2rem;
+	font-size: 1.2rem;
+	border: 1px solid rgba(0,0,0,0.2);
+}
+
+.form-control::placeholder {
+	color: #c3c3c3;
+}
+
+.input-field {
+	width: 48%;
+}
+
+.contact-list-item {
+	display: flex;
+	align-items: center;
+	margin-bottom: 2rem;
+}
+
+.contact-list-item i {
+	font-size: 1.2rem;
+	color: rgb(32, 195, 114);
+	width: 2rem;
+}
+
+.contact-list-item a,
+.contact-list-item address {
+  color: #555;
+  /* font-weight: 300; */
+  margin-left: 0.5rem;
+}
+.address {
+  align-items: flex-start;
+}
+
 .footer {
-	border-bottom: 2px solid rgba(0,0,0,0.3);
-}
-
-.footer h2 {
-	font-size: 34px;
-}
-
-.footer p {
-	font-size: 18px;
-	margin: 15px 0;
-}
-
-.footer-form input {
-	border: 2px solid rgba(0,0,0,0.3);
-	background: rgba(238,238,238 ,1);
-	color: rgba(0,0,0,0.3);
-	font-size: 16px;
-	font-weight: bold; 
-	width: 100%;
-	height: 50px;
-	padding: 20px;
-}
-
-.footer-form div input:nth-child(1) {
-	width: 100%;
-	margin-right: 20px;
-}
-
-.footer-form .textarea {
-	margin: 25px 0;
-
-	height: 150px;
-}
-
-.footer-form {
-	border-right: 2px solid rgba(0,0,0,0.3);
-	padding-top: 0;
-	padding-bottom: 0;
-}
-
-.footer-social {
-	padding-top: 0;
-	padding-bottom: 0;
-}
-
-.social {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-.social a {
-	color: rgba(124,179,66 ,1);
-	font-weight: bold;
-	margin: 0 0 40px 20px;
-}
-
-.fab,
-.fas {
-	margin-right: 15px; 
-}
-
-.footer-end {
-	background: rgba(238,238,238 ,1);
-	height: 100%;
-}
-
-.footnote {
-	display: flex;
-	justify-content: center;
+  background: #f5f5f5;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: #888;
 }
 
 /*
@@ -314,15 +337,20 @@ section ul li {
 */
 
 .btn {
-	background-color: white;
-	letter-spacing: 1px;
-	color: rgba(0,0,0,0.3);
-	font-weight: bold;
-	border: 1.5px solid rgba(0,0,0, 0.3);
-	border-radius: 30px;
-	height: 50px;
-	width: 30%;
-	padding: auto auto;
+	padding: 0.8rem 2rem;
+	background: transparent;
+	border-radius: 3rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1rem;
+	margin-top: 2rem;
+	letter-spacing: 0.05rem;
+	color: #555;
+	cursor: pointer;
+}
+
+.btn-secondary {
+  border: 2px solid rgba(0, 0, 0, 0.3);
 }
 
 .btn-active {
