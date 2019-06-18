@@ -548,6 +548,14 @@ body {
 		box-shadow: none;
 	}
 
+	.form-control {
+		text-align: left;
+	}
+
+	.form-btn {
+		width: 40%;
+	}
+
 	.menu {
 		display: none;
 	}
